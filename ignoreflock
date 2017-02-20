@@ -1,0 +1,7 @@
+#!/bin/sh
+
+ignoreflock_LIBRARY="$(dirname $0)/libignoreflock.so.0"
+
+# invoke the program with the args given
+LD_PRELOAD="$ignoreflock_LIBRARY${LD_PRELOAD:+:$LD_PRELOAD}" exec "$@"
+
