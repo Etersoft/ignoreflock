@@ -13,7 +13,7 @@ Source: %name-%version.tar
 
 %description
 ignoreflock is LD_PRELOAD library that disables flock function.
-On local Linux filesystems, POSIX locks and BSD locks are invisible to one another.
+On local Linux filesystems, POSIX locks and BSD locks are invisible each other.
 But on network filesystems flock implemented open POSIX locks and
 have intersections with fcntl style locking.
 
